@@ -1,0 +1,24 @@
+<html lang="en">
+
+<%- include('./partials/head.ejs') %>
+
+<body>
+    
+    <%- include('./partials/nav.ejs') %>
+
+    <div class="RegisterForm">
+        <form action="/register" method="post">
+            <label for="">Email</label>
+            <input type="text" name="email">
+            <label for="">Name</label>
+            <input type="text" name="username">
+            <label for="">Password</label>
+            <input type="text" name="password">
+            <button>Register</button>
+        </form>
+    </div>
+    <h6>Have an account? <a href="/login">Login Here</a></h6>
+
+    <%- include('./partials/footer.ejs') %>
+</body>
+</html>
