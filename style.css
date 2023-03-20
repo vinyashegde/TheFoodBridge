@@ -6,12 +6,16 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .parent {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 1fr 6fr repeat(5, 3fr) 4fr 3fr;
-  grid-column-gap: 10px;
-  grid-row-gap: 10px;
+  grid-template-rows: 0.2fr 3.8fr repeat(2, 2.5fr) 2fr 1.5fr 2fr 3fr 1.2fr;
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
 }
 
 .header {
@@ -102,7 +106,7 @@ body {
 }
 
 .navbar a:hover {
-  background-color: #555;
+  background-color: #FF924F;
 }
 
 .profile-icon {
@@ -114,13 +118,30 @@ body {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
+  transition: background-color 0.3s;
+}
+
+.logo-icon {
+  color: #fff;
+  position: absolute;
+  left: 0;
+  z-index: 999;
+  font-size: 20px;
+  margin: 0 5px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
   transition: background-color 0.3s;
 }
 
 .profile-icon:hover {
-  background-color: #777;
+  background-color: #FF924F;
 }
 
 .hero {
@@ -228,4 +249,116 @@ body {
 img {
   max-width: 100%;
   max-height: 100%;
+}
+
+[data-scroll] {
+  transition: all 1s;
+}
+
+p[data-scroll=in] {
+  transition: 1s;
+  transform: translateY(0);
+  opacity: 1;
+}
+
+p[data-scroll=out] {
+  transition: 1s;
+  transform: translateY(50px);
+  opacity: 0;
+}
+
+img[data-scroll=in] {
+  transition: 1s;
+  transform: translateY(0);
+  opacity: 1;
+}
+
+img[data-scroll=out] {
+  transition: 1s;
+  transform: translateY(50px);
+  opacity: 0;
+}
+
+button[data-scroll=in] {
+  transition: 1s;
+  transform: translateY(0);
+  opacity: 1;
+}
+
+button[data-scroll=out] {
+  transition: 1s;
+  transform: translateY(50px);
+  opacity: 0;
+}
+
+h1[data-scroll=in] {
+  transition: 1s;
+  transform: translateY(0);
+  opacity: 1;
+}
+
+h1[data-scroll=out] {
+  transition: 1s;
+  transform: translateY(50px);
+  opacity: 0;
+}
+
+h2[data-scroll=in] {
+  transition: 1s;
+  transform: translateY(0);
+  opacity: 1;
+}
+
+h2[data-scroll=out] {
+  transition: 1s;
+  transform: translateY(50px);
+  opacity: 0;
+}
+
+a[data-scroll=in] {
+  transition: 1s;
+  transform: translateY(0);
+  opacity: 1;
+}
+
+a[data-scroll=out] {
+  transition: 1s;
+  transform: translateY(50px);
+  opacity: 0;
+}
+
+h3[data-scroll=in] {
+  transition: 1s;
+  transform: translateY(0);
+  opacity: 1;
+}
+
+h3[data-scroll=out] {
+  transition: 1s;
+  transform: translateY(50px);
+  opacity: 0;
+}
+
+li[data-scroll=in] {
+  transition: 1s;
+  transform: translateY(0);
+  opacity: 1;
+}
+
+li[data-scroll=out] {
+  transition: 1s;
+  transform: translateY(50px);
+  opacity: 0;
+}
+
+.history-box[data-scroll=in] {
+  transition: 1s;
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.history-box[data-scroll=out] {
+  transition: 1s;
+  transform: translateY(50px);
+  opacity: 0;
 }
