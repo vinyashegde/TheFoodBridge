@@ -13,7 +13,7 @@ html {
 .parent {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 0.2fr 3.8fr repeat(2, 2.5fr) 2fr 1.5fr 2fr 3fr 1.2fr;
+  grid-template-rows: 0.2fr 4fr repeat(2, 2.5fr) 2fr 1.5fr 2fr 3fr 1.2fr;
   grid-column-gap: 5px;
   grid-row-gap: 5px;
 }
@@ -361,4 +361,13 @@ li[data-scroll=out] {
   transition: 1s;
   transform: translateY(50px);
   opacity: 0;
+}
+
+
+@media only screen and (max-device-width: 480px) {
+  .parent {
+  
+  height:100vh;
+  
+}
 }
